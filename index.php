@@ -34,14 +34,14 @@ class AskNameCommand extends Command
         ]);
 
         $output->writeln([ 
+            
             '',
             '===================== OPTIONS-Personal Data ======================',            
             '*  1 - Insert your Name, Email and Phone                          *',
             '*  2 - Add your age                                               *',
             '*  3 - List                                                       *',
             '==================================================================',
-            '',
-          
+            '',         
 
         ]);            
        
@@ -81,14 +81,15 @@ class AskNameCommand extends Command
                   
            addDb($id,$age);
 
-        }elseif ($answer == 3){   //List
+        } elseif ($answer == 3){   //List
     
            $output->writeln([ listDb() ]); 
                           
-        }else {   
+        } else {   
                   
             echo 'Option not selected.';                
          }
+         
         return 0;      
 
       }        
