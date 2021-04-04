@@ -34,15 +34,13 @@ class AskNameCommand extends Command
         ]);
 
         $output->writeln([ 
-            
             '',
             '===================== OPTIONS-Personal Data ======================',            
             '*  1 - Insert your Name, Email and Phone                          *',
             '*  2 - Add your age                                               *',
             '*  3 - List                                                       *',
             '==================================================================',
-            '',         
-
+            '',        
         ]);            
        
         $question = new Question(" Number...: ", "guest");
