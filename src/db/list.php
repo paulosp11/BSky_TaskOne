@@ -10,6 +10,7 @@ function listDb() {
                          phone as Phone, age as Age')
      ->from('persons')
      ->groupBy('id, name')
+     ->groupBy('id, name')
     
      ->execute();   
      print_r($statement->fetchAllAssociative());     

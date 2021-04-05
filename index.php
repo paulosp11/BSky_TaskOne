@@ -48,10 +48,6 @@ class AskNameCommand extends Command
         
         if ($answer == '1' ) { //Insert
 
-            $output->writeln([ 'OPTION chosen: Insert',
-            ''     
-            ]);                
-
             $question = new Question("Enter your Name: ", "guest");
             $name = $helper->ask($input, $output, $question);
 
